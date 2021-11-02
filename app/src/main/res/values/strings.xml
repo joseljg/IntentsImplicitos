@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">IntentsImplicitos</string>
+    <string name="abrir_texto_con">Abrir Texto con...</string>
 </resources>

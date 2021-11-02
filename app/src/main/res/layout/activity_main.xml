@@ -35,9 +35,78 @@
         android:id="@+id/bt_web"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="51dp"
+        android:layout_marginStart="28dp"
         android:onClick="abrirweb"
         android:text="Abrir Web"
         app:layout_constraintBaseline_toBaselineOf="@+id/edt_web"
         app:layout_constraintStart_toEndOf="@+id/edt_web" />
+
+    <EditText
+        android:id="@+id/edt_mapa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Direccion"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_web" />
+
+    <Button
+        android:id="@+id/bt_mapa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:onClick="abrirmapa"
+        android:text="Abrir Mapa"
+        app:layout_constraintBaseline_toBaselineOf="@+id/edt_mapa"
+        app:layout_constraintStart_toEndOf="@+id/edt_mapa" />
+
+    <EditText
+        android:id="@+id/edt_telefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="34dp"
+        android:ems="10"
+        android:hint="Telefono"
+        android:inputType="phone"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_mapa" />
+
+    <Button
+        android:id="@+id/bt_telefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:onClick="llamar"
+        android:text="Llamar"
+        app:layout_constraintBaseline_toBaselineOf="@+id/edt_telefono"
+        app:layout_constraintStart_toEndOf="@+id/edt_telefono" />
+
+    <EditText
+        android:id="@+id/edt_texto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Escribe un texto"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_telefono" />
+
+    <Button
+        android:id="@+id/bt_texto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:text="Copiar Texto"
+        android:onClick="copiarTexto"
+        app:layout_constraintBaseline_toBaselineOf="@+id/edt_texto"
+        app:layout_constraintStart_toEndOf="@+id/edt_texto" />
 </androidx.constraintlayout.widget.ConstraintLayout>
